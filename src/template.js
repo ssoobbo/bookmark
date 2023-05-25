@@ -7,15 +7,15 @@ export default function tempalte () {
   <div id="show-setting-bookmark"></div>
   <div id="gbf-bookmark-lacia">${renderList()}</div>
   <div id="gbf-bookmark-setting" class="paper-shadow dark-shadow">
-  <div class="tab-bookmark-setting active-bookmark paper-shadow">书签</div>
-  <div class="tab-bookmark-setting option-bookmark paper-shadow">选项</div>
+  <div class="tab-bookmark-setting active-bookmark paper-shadow">書籤</div>
+  <div class="tab-bookmark-setting option-bookmark paper-shadow">選項</div>
   <div class="setting-box-bookmark box-active">
     <div class="toolbar-bookmark">
     <div id="btn-add-bookmark" class="btn-bookmark btn-add paper-shadow2">添加</div>
     <div class="toolbar-right">
     <input type="file" style="display:none" id="ipt-import-bookmark" accept=".json">
-    <label for="ipt-import-bookmark" id="btn-import-bookmark" class="btn-bookmark btn-add paper-shadow2">导入</label>
-    <div id="btn-export-bookmark" class="btn-bookmark btn-add paper-shadow2">导出</div>
+    <label for="ipt-import-bookmark" id="btn-import-bookmark" class="btn-bookmark btn-add paper-shadow2">導入</label>
+    <div id="btn-export-bookmark" class="btn-bookmark btn-add paper-shadow2">導出</div>
     </div>
     </div>
     <div id="bookmark-cont">${renderTag()}</div>
@@ -25,13 +25,13 @@ export default function tempalte () {
       <span class="label-setting paper-shadow2">位置</span>
       <div class="paper-shadow2 ipt-setting-cont">
         <select id="ipt-position-bookmark" class="ipt-setting-bookmark">
-        <option value="left">左边</option>
-        <option value="right">右边</option>
+        <option value="left">左邊</option>
+        <option value="right">右邊</option>
         </select>
       </div>
     </div>
     <div>
-      <span class="label-setting paper-shadow2">边距</span>
+      <span class="label-setting paper-shadow2">編距</span>
       <div class="paper-shadow2 ipt-setting-cont">
         <input id="ipt-margin-bookmark" class="ipt-setting-bookmark" value="2" type="number" min="0" max="100">
       </div>
@@ -40,17 +40,17 @@ export default function tempalte () {
       <span class="label-setting paper-shadow2">文字</span>
       <div class="paper-shadow2 ipt-setting-cont">
       <select id="ipt-align-bookmark" class="ipt-setting-bookmark">
-        <option value="left">左对齐</option>
+        <option value="left">左對齊</option>
         <option value="center">居中</option>
-        <option value="right">右对齐</option>
+        <option value="right">右對齊</option>
       </select>
       </div>
     </div>
     <div>
-      <span class="label-setting paper-shadow2">动画</span>
+      <span class="label-setting paper-shadow2">動畫</span>
       <div class="paper-shadow2 ipt-setting-cont">
       <select id="ipt-animation-bookmark" class="ipt-setting-bookmark">
-        <option value="open">启用</option>
+        <option value="open">啟用</option>
         <option value="close">禁止</option>
       </select>
       </div>
@@ -66,7 +66,7 @@ export default function tempalte () {
       </div>
     </div>
     <div>
-      <span class="label-setting paper-shadow2">对齐书签</span>
+      <span class="label-setting paper-shadow2">對齊書籤</span>
       <div class="paper-shadow2 ipt-setting-cont">
       <select id="ipt-mixed-bookmark" class="ipt-setting-bookmark">
         <option value="no">是</option>
@@ -75,36 +75,36 @@ export default function tempalte () {
       </div>
     </div>
     <div>
-      <span class="label-setting paper-shadow2">自动隐藏</span>
+      <span class="label-setting paper-shadow2">自動隱藏</span>
       <div class="paper-shadow2 ipt-setting-cont">
         <input id="ipt-hidedelay-bookmark" class="ipt-setting-bookmark" value="10" type="number" min="-2" max="60">
       </div>
-      <span class="hint-bookmark">等待指定秒数后自动隐藏，设为0直接隐藏，设为-1则始终显示。如需始终弹出书签栏，把自动隐藏设为-2，并把边距调到100。</span>
+      <span class="hint-bookmark">等待指定秒数後自動隱藏，設為0直接隱藏，設為-1一直顯示。如需一直顯示書籤欄，把自動隐藏設為-2，並把邊距调到100。</span>
     </div>
     <div><div class="btn-bookmark paper-shadow2" id="btn-save-setting">保存</div></div>
   </div>
   <div class="footer-bookmark-setting">
-    <div class="btn-bookmark paper-shadow2" id="btn-close-bookmark">关闭</div>
+    <div class="btn-bookmark paper-shadow2" id="btn-close-bookmark">關閉</div>
   </div>
   <div id="gbf-bookmark-tagmodal" class="paper-shadow">
     <div>
-    <span class="label-tagmodal paper-shadow2">书签名</span>
-    <div class="paper-shadow2 ipt-tagmodal-cont"><input id="ipt-name-bookmark" class="ipt-tagmodal" placeholder="请输入书签的名字" type="text"></div>
+    <span class="label-tagmodal paper-shadow2">書籤名</span>
+    <div class="paper-shadow2 ipt-tagmodal-cont"><input id="ipt-name-bookmark" class="ipt-tagmodal" placeholder="請輸入書籤的名字" type="text"></div>
     </div>
     <div>
-    <span class="label-tagmodal paper-shadow2">网址</span>
-    <div class="paper-shadow2 ipt-tagmodal-cont"><input id="ipt-url-bookmark" class="ipt-tagmodal" placeholder="请输入书签地址" type="text"></div>
+    <span class="label-tagmodal paper-shadow2">網址</span>
+    <div class="paper-shadow2 ipt-tagmodal-cont"><input id="ipt-url-bookmark" class="ipt-tagmodal" placeholder="請输入書籤地址" type="text"></div>
     </div>
     <div>
     <span class="label-tagmodal paper-shadow2">颜色</span>
     <div class="paper-shadow2 ipt-tagmodal-cont"><input id="ipt-bgcolor-bookmark" class="ipt-tagmodal" value="#00BCD4" type="color"></div>
     </div>
     <div>
-    <span class="label-tagmodal paper-shadow2">序号</span>
+    <span class="label-tagmodal paper-shadow2">編號</span>
     <div class="paper-shadow2 ipt-tagmodal-cont"><input id="ipt-index-bookmark" class="ipt-tagmodal" min="1" max="100" type="number"></div>
     </div>
     <div>
-    <span class="label-tagmodal paper-shadow2">父书签</span>
+    <span class="label-tagmodal paper-shadow2">父書籤</span>
     <div class="paper-shadow2 ipt-tagmodal-cont"><input id="ipt-parent-bookmark" class="ipt-tagmodal" min="0" max="100" type="number"></div>
     </div>
     <div>
