@@ -61,7 +61,8 @@ export default function tempalte () {
       <select id="ipt-size-bookmark" class="ipt-setting-bookmark">
         <option value="1">大</option>
         <option value="2">中</option>
-        <option value="3">小</optionㄐㄐ        <option value="4">小ㄐㄐ</option>
+        <option value="3">小</option>
+        <option value="4">小ㄐㄐ</option>
       </select>
       </div>
     </div>
