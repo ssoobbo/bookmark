@@ -56,7 +56,7 @@ export default function tempalte () {
       </div>
     </div>
     <div>
-      <span class="label-setting paper-shadow2">尺寸</span>
+      <span class="label-setting paper-shadow2">新尺寸</span>
       <div class="paper-shadow2 ipt-setting-cont">
       <select id="ipt-size-bookmark" class="ipt-setting-bookmark">
         <option value="1">大</option>
